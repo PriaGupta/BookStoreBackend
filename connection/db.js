@@ -9,4 +9,6 @@ const db= async()=>{
         console.log(error);
     }
 }
+
+
 db();

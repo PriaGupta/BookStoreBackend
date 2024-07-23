@@ -16,6 +16,10 @@ app.use("/api",Books);
 app.use("/api",Favourites );
 app.use("/api",Cart);
 app.use("/api",Order);
+
+app.get('/', (req, res) => {
+    res.send('Welcome to the Veggie Vista API');
+  });
 //port
 app.listen(process.env.PORT,()=>{
     console.log(`server started at port ${process.env.PORT}`);
